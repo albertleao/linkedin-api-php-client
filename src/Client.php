@@ -501,7 +501,7 @@ class Client
         } catch (RequestException $requestException) {
             throw Exception::fromRequestException($requestException);
         }
-        return self::responseToArray($response);
+        return $response;
     }
 
     /**
